@@ -34,12 +34,12 @@ public class Lista {
     public String Listar()
     {
         Auxiliar = primero;
+        cadena = "";
         while(Auxiliar != null)
         {
-            cadena = cadena + Auxiliar.getDato();
+            cadena = cadena + "[" +Auxiliar.getDato()+"]";
             Auxiliar = Auxiliar.siguiente;
         }
-        
         return cadena;
     }
 }

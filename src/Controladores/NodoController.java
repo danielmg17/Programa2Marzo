@@ -49,7 +49,7 @@ public class NodoController implements ActionListener{
         
         if(e.getSource () == this.vistaNodos.btnApilar);
         {
-            this.nuevaLista.Apilar();
+            this.nuevaLista.Apilar(Integer.parseInt(this.vistaNodos.txtDato.getText()));
             this.vistaNodos.txtLista.setText(this.nuevaLista.Listar());
         }
     }
