@@ -46,6 +46,13 @@ public class NodoController implements ActionListener{
             this.vistaNodos.setLocationRelativeTo(null);
             this.vistaNodos.setVisible(true);
         }
+        
+        if(e.getSource () == this.vistaNodos.btnApilar);
+        {
+            this.nuevaLista.Apilar();
+            this.vistaNodos.txtLista.setText(this.nuevaLista.Listar());
+        }
     }
+    
     
 }

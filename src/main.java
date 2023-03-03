@@ -1,13 +1,10 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 
-/**
- *
- * @author umg
- */
+import Controladores.NodoController;
+import Modelos.Lista;
+import Vistas.frmNodos;
+import Vistas.frmPrincipal;
+
+
 public class main {
 
     /**
@@ -15,6 +12,14 @@ public class main {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        
+        frmPrincipal vistaPrincipal = new frmPrincipal();
+        frmNodos vistaNodos = new frmNodos(vistaPrincipal, true);
+        
+        Lista  nuevaLista = new Lista();
+        
+        //Levantar el controlador
+        NodoController nuevoControlador = new NodoController(vistaPrincipal,vistaNodos,nuevaLista);
     }
     
 }
