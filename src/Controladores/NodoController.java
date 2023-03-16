@@ -47,12 +47,17 @@ public class NodoController implements ActionListener{
             this.vistaNodos.setVisible(true);
         }
         
-        if(e.getSource () == this.vistaNodos.btnApilar);
+        if(e.getSource () == this.vistaNodos.btnApilar)
         {
             this.nuevaLista.Apilar(Integer.parseInt(this.vistaNodos.txtDato.getText()));
             this.vistaNodos.txtLista.setText(this.nuevaLista.Listar());
         }
-    }
-    
-    
+        
+        if(e.getSource() == this.vistaNodos.btnEncolar)
+        {
+            this.nuevaLista.Encolar(Integer.parseInt(this.vistaNodos.txtDato.getText()));
+            this.vistaNodos.txtLista.setText(this.nuevaLista.Listar());
+        }
+        
+    }   
 }
