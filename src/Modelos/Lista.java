@@ -39,7 +39,7 @@ public class Lista {
         public void Encolar(int dato)
     {
         Nodo nuevoNodo = new Nodo(dato);
-        if(primero == null)
+        if(segundo == null)
         {
             primero = nuevoNodo;
             segundo = nuevoNodo;
